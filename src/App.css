@@ -10,12 +10,15 @@
   --gradient-color-three: #6193ea;
   --gradient-color-four: #7488dd;
   --gradient-color-five: #817dce;
-  --output-bg-color: #00000064;
-  --previous-operand-color: #ffffff80;
+  --output-bg-color: #000000bf;
+  --previous-operand-color: #ffffffbf;
   --text-color: #ffffff;
+  --border-color: #c4c4c48b;
   --font-size-small: 1.5rem;
   --font-size-medium: 2.5rem;
-  --font-size-large: 3.5rem;
+  --font-size-button: 2rem;
+  --button-bg-color: #ffffffbf;
+  --button-bg-hover: #ffffffe6;
 }
 
 body {
@@ -35,10 +38,15 @@ body {
 
 .calculator-grid > button {
   cursor: pointer;
-  font-size: var(--font-size-medium);
-  border: 1px solid white;
+  font-size: var(--font-size-button);
+  border: 1px solid var(--border-color);
   outline: none;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: var(--button-bg-color);
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  background-color: var(--button-bg-hover);
 }
 
 .span-two {
